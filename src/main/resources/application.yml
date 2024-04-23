@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/harvesthub
     username: root
-    password:
+    password: sql@123
   jpa:
     properties:
       hibernate:
@@ -21,11 +21,7 @@ spring:
     show-sql: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
-  quartz:
-    job-store-type: jdbc
-    overwrite-existing-jobs: true
-    jdbc:
-      initialize-schema: never
+
   servlet:
     multipart:
       max-file-size: 50MB

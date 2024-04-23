@@ -28,20 +28,18 @@ public class ProductServiceImpl implements ProductService {
         this.productRepository.findByActiveTrueAndName(productDao.getName()).ifPresentOrElse(
                 product -> {
                     throw new IllegalArgumentException("Product already exist for name: " + product.getName());
-                }, () -> {
-                    this.productRepository.save(
-                            Product.builder()
-                                    .name(productDao.getName())
-                                    .price(productDao.getPrice())
-                                    .photo(productDao.getPhoto())
-                                    .productType(productDao.getProductType())
-                                    .discount(productDao.getDiscount())
-                                    .active(Boolean.TRUE)
-                                    .createdBy(userDetails.getName())
-                                    .createdDate(LocalDateTime.now())
-                                    .build()
-                    );
-                }
+                }, () -> this.productRepository.save(
+                        Product.builder()
+                                .name(productDao.getName())
+                                .price(productDao.getPrice())
+                                .photo(productDao.getPhoto())
+                                .productType(productDao.getProductType())
+                                .discount(productDao.getDiscount())
+                                .active(Boolean.TRUE)
+                                .createdBy(userDetails.getName())
+                                .createdDate(LocalDateTime.now())
+                                .build()
+                )
         );
     }
 
