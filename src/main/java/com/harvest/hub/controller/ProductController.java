@@ -50,4 +50,11 @@ public class ProductController {
         return this.productService.getProductsByType(productType);
     }
 
+    @GetMapping("{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public Product getProductsById(
+            @PathVariable Long id
+    ) {
+        return this.productService.getProductsById(id);
+    }
 }

@@ -71,4 +71,11 @@ public class ProductServiceImpl implements ProductService {
         return this.productRepository.findByActiveTrueAndProductType(productType);
     }
 
+    @Override
+    public Product getProductsById(Long id) {
+        return  this.productRepository.findByActiveTrueAndId(id).orElseThrow(
+                () -> new IllegalArgumentException("No Product Found")
+        );
+    }
+
 }

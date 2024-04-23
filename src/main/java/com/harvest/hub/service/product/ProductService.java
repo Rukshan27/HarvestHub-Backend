@@ -17,4 +17,6 @@ public interface ProductService {
 
     List<Product> getProductsByType(ProductType productType);
 
+    Product getProductsById(Long id);
+
 }
