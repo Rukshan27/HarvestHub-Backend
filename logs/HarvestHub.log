@@ -1,0 +1,55 @@
+2024-04-25T19:18:23.798+05:30  INFO 3956 --- [HarvestHub] [main] com.harvest.hub.HarvestHubApplication    : Starting HarvestHubApplication using Java 17.0.2 with PID 3956 (D:\HarvestHub\HUB-Backend\target\classes started by User in D:\HarvestHub\HUB-Backend)
+2024-04-25T19:18:23.837+05:30  INFO 3956 --- [HarvestHub] [main] com.harvest.hub.HarvestHubApplication    : No active profile set, falling back to 1 default profile: "default"
+2024-04-25T19:18:27.556+05:30  INFO 3956 --- [HarvestHub] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-25T19:18:28.058+05:30  INFO 3956 --- [HarvestHub] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 428 ms. Found 5 JPA repository interfaces.
+2024-04-25T19:18:29.812+05:30  INFO 3956 --- [HarvestHub] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-25T19:18:29.832+05:30  INFO 3956 --- [HarvestHub] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-25T19:18:29.832+05:30  INFO 3956 --- [HarvestHub] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-04-25T19:18:29.984+05:30  INFO 3956 --- [HarvestHub] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-25T19:18:29.984+05:30  INFO 3956 --- [HarvestHub] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5961 ms
+2024-04-25T19:18:30.327+05:30  INFO 3956 --- [HarvestHub] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-25T19:18:30.478+05:30  INFO 3956 --- [HarvestHub] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-04-25T19:18:30.552+05:30  INFO 3956 --- [HarvestHub] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-04-25T19:18:31.107+05:30  INFO 3956 --- [HarvestHub] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-25T19:18:31.162+05:30  INFO 3956 --- [HarvestHub] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-25T19:18:31.937+05:30  INFO 3956 --- [HarvestHub] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@550fa96f
+2024-04-25T19:18:31.942+05:30  INFO 3956 --- [HarvestHub] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-25T19:18:32.082+05:30  WARN 3956 --- [HarvestHub] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-04-25T19:18:34.113+05:30  INFO 3956 --- [HarvestHub] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-25T19:18:34.332+05:30  INFO 3956 --- [HarvestHub] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-25T19:18:35.137+05:30  INFO 3956 --- [HarvestHub] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-04-25T19:18:35.523+05:30  WARN 3956 --- [HarvestHub] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-25T19:18:36.012+05:30  INFO 3956 --- [HarvestHub] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34947355, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62ad5f35, org.springframework.security.web.context.SecurityContextHolderFilter@5a106b26, org.springframework.security.web.header.HeaderWriterFilter@13e6ab86, org.springframework.web.filter.CorsFilter@5e6ad84c, org.springframework.security.web.authentication.logout.LogoutFilter@57eb2555, com.harvest.hub.filter.JwtAuthenticationFilter@451f3f66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16eca98a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@119f035f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4117e0c9, org.springframework.security.web.session.SessionManagementFilter@14f1545c, org.springframework.security.web.access.ExceptionTranslationFilter@7057d9f4, org.springframework.security.web.access.intercept.AuthorizationFilter@74f9004c]
+2024-04-25T19:18:36.267+05:30  WARN 3956 --- [HarvestHub] [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-04-25T19:18:36.422+05:30  INFO 3956 --- [HarvestHub] [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2024-04-25T19:18:36.436+05:30  INFO 3956 --- [HarvestHub] [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2024-04-25T19:18:36.442+05:30  INFO 3956 --- [HarvestHub] [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2024-04-25T19:18:36.444+05:30  INFO 3956 --- [HarvestHub] [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2024-04-25T19:18:36.444+05:30  INFO 3956 --- [HarvestHub] [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2024-04-25T19:18:36.444+05:30  INFO 3956 --- [HarvestHub] [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2024-04-25T19:18:36.444+05:30  INFO 3956 --- [HarvestHub] [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2024-04-25T19:18:36.444+05:30  INFO 3956 --- [HarvestHub] [main] org.quartz.core.QuartzScheduler          : JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@12544a50
+2024-04-25T19:18:36.557+05:30  INFO 3956 --- [HarvestHub] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-25T19:18:36.562+05:30  INFO 3956 --- [HarvestHub] [main] o.s.s.quartz.SchedulerFactoryBean        : Starting Quartz Scheduler now
+2024-04-25T19:18:36.564+05:30  INFO 3956 --- [HarvestHub] [main] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2024-04-25T19:18:36.588+05:30  INFO 3956 --- [HarvestHub] [main] com.harvest.hub.HarvestHubApplication    : Started HarvestHubApplication in 14.951 seconds (process running for 16.728)
+2024-04-25T19:19:45.539+05:30  INFO 3956 --- [HarvestHub] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-25T19:19:45.539+05:30  INFO 3956 --- [HarvestHub] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-25T19:19:45.548+05:30  INFO 3956 --- [HarvestHub] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2024-04-25T19:19:47.255+05:30  INFO 3956 --- [HarvestHub] [http-nio-8080-exec-2] c.h.hub.service.user.UserServiceImpl     : rukshanmadu17@gmail.com, User logged in Successfully
+2024-04-25T19:20:49.610+05:30  INFO 3956 --- [HarvestHub] [http-nio-8080-exec-9] c.h.hub.service.user.UserServiceImpl     : udiniperera99@gmail.com, User logged in Successfully
+2024-04-25T19:24:47.843+05:30  INFO 3956 --- [HarvestHub] [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-25T19:24:47.880+05:30  INFO 3956 --- [HarvestHub] [SpringApplicationShutdownHook] o.s.s.quartz.SchedulerFactoryBean        : Shutting down Quartz Scheduler
+2024-04-25T19:24:47.880+05:30  INFO 3956 --- [HarvestHub] [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+2024-04-25T19:24:47.880+05:30  INFO 3956 --- [HarvestHub] [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+2024-04-25T19:24:47.880+05:30  INFO 3956 --- [HarvestHub] [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+2024-04-25T19:24:47.888+05:30  INFO 3956 --- [HarvestHub] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-25T19:24:47.901+05:30  INFO 3956 --- [HarvestHub] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-25T19:24:47.933+05:30  INFO 3956 --- [HarvestHub] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
